@@ -8,6 +8,14 @@ This is a project I completed for a class. It takes in a song as an input and sp
 
 Line 421 in the SongManager.cpp file needs a key to connect to the genius lyrics api. Otherwise, it can only utilize the database it has on hand.
 
+-------
+## To Run:
+```
+cd src
+make && make clean
+./Run
+```
+
 
 ------
 Scores for songs recommendations:
