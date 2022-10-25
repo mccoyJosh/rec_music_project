@@ -382,7 +382,8 @@ class MusicAPI {
 
         struct curl_slist *headers = NULL;
         headers = curl_slist_append(headers, "X-RapidAPI-Host: genius-song-lyrics1.p.rapidapi.com");
-        headers = curl_slist_append(headers, "X-RapidAPI-Key: 2411701157msh967605b77a3c92dp12f31bjsnf26bfca001ac");
+        std::string key ="";
+        headers = curl_slist_append(headers, "X-RapidAPI-Key: " + key);
         curl_easy_setopt(hnd, CURLOPT_HTTPHEADER, headers);
         
         curl_easy_setopt(hnd, CURLOPT_WRITEFUNCTION, Write);
